@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Something went wrong</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+@font-face {
+  font-family: "FreightSans Pro Medium";
+  src: url(https://assets.wetransfer.net/fonts/FreightSans-Pro-Medium.eot);
+  /* IE9 Compat Modes */
+  src: url(https://assets.wetransfer.net/fonts/FreightSans-Pro-Medium.eot?#iefix) format("embedded-opentype"), url(https://assets.wetransfer.net/fonts/FreightSans-Pro-Medium.woff) format("woff"), url(https://assets.wetransfer.net/FreightSans-Pro-Medium_web.ttf) format("truetype");
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fakt Pro Normal";
+  src: url(https://assets.wetransfer.net/fonts/FaktPro-Normal.eot);
+  /* IE9 Compat Modes */
+  src: url(https://assets.wetransfer.net/fonts/FaktPro-Normal.eot?#iefix) format("embedded-opentype"), url(https://assets.wetransfer.net/fonts/FaktPro-Normal.woff) format("woff"), url(https://assets.wetransfer.net/fonts/FaktPro-Normal_web.ttf) format("truetype");
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  background-color: #EFEFEF;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a.error-page__logo {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  width: 52px;
+  height: 29px;
+}
+
+div.error-page__content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #17181A;
+  font-family: 'FreightSans Pro Medium', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+p {
+  display: block;
+  font-size: 16px;
+  color: #919599;
+  font-family: 'Fakt Pro Normal', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  line-height: 1.4;
+  margin: 10px 0 0;
+}
+
+p > button {
+  font-family: inherit;
+  color: white;
+  border-style: none;
+  padding: 0.75em 1em 0.6em 1em;
+  border-radius: 2em;
+  background: #409FFF;
+  font-size: 1em;
+  outline: none;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+p > button:active {
+  color: #409FFF;
+  background: white;
+}
+
+p > a {
+  color: #409FFF;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+  <a href="https://wetransfer.com" class="error-page__logo">
+    <svg viewBox="-4 -2 52 29" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path d="M12.073 14.646c.613 0 .958.352 1.38 1.018l1.84 2.94c.69 1.135 1.264 1.918 2.606 1.918 1.34 0 1.954-.548 2.605-2.076.805-1.88 1.648-4.153 2.415-7.21.843-3.408 1.226-5.524 1.226-7.248 0-1.724-.536-2.742-2.376-3.095C19.24.423 15.83.15 12.073.15c-3.756 0-7.167.273-9.697.743C.536 1.246 0 2.263 0 3.988c0 1.724.383 3.84 1.226 7.25.767 3.055 1.61 5.327 2.415 7.208.653 1.528 1.266 2.076 2.607 2.076 1.342 0 1.917-.783 2.607-1.92l1.84-2.938c.42-.666.766-1.018 1.38-1.018zm23.572 6.197c3.22 0 5.672-1.018 6.975-2.43.69-.782 1.495-1.997.92-2.937-.498-.823-1.34-.98-2.338-.47-.996.51-2.108.783-3.373.783-1.227 0-2.53-.47-3.22-1.176-.843-.862-1.303-1.96-1.303-3.252 0-.313.19-.353.536-.078.882.705 2.185 1.057 3.948 1.057 3.26 0 6.133-2.232 6.133-5.68 0-3.643-3.372-6.347-8.47-6.347-5.71 0-10.12 3.762-10.12 10.11 0 5.915 3.834 10.42 10.312 10.42z" id="b"/>
+  </defs>
+  <g fill="none">
+    <use fill="#000" fill-rule="evenodd" xlink:href="#b"/>
+  </g>
+</svg>
+  </a>
+  <div class="error-page__content">
+    <h1>Houston, we have a problem</h1>
+    <p>
+      Sorry, we couldn’t find the page you were looking for.
+    </p>
+    <p>
+      You can try again or let us know what happened.<br/>
+      Send your error code to <a href="mailto:support@wetransfer.com">support@wetransfer.com</a> and we’ll try to help!
+    </p>
+    <p id='copyButtonContainer' style="display: none">
+      <button>Copy my error code</button>
+    </p>
+    <p id='copied' style="visibility: hidden">
+      Copied and ready to send!
+    </p>
+
+    <div id='errorCode' style="display: none">
+      
+v0:BAPdLPrWjKC/3Lx4ZhiHGU7uNQKtlv2RgSlBp
+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
+KMRPMFxeXyLx/Pral3leMzeQjSIFmxhoA==
+
+    </div>
+
+    <script type="text/javascript">
+      var encodedError = "v0:BAPdLPrWjKC/3Lx4ZhiHGU7uNQKtlv2RgSlBp\n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\nKMRPMFxeXyLx/Pral3leMzeQjSIFmxhoA==";
+      console.warn(encodedError);
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        document.querySelector('#copyButtonContainer button').addEventListener('click', function(evt) {
+          var formattedForEmail = [
+            "Hi WeTransfer support,\n\n",
+            "I had something go wrong while using WeTransfer.com and I would appreciate your help.\n\n",
+            "My WT-ERROR-CODE is:\n",
+            encodedError, "\n\n",
+            "Please let me know as soon as you've looked into this!\n"
+          ].join('')
+
+          navigator.clipboard.writeText(formattedForEmail)
+            .then(function() {
+              document.querySelector('#copied').style.visibility = 'visible';
+            })
+            .catch(function(err) {
+              // This can happen if the user denies clipboard permissions:
+              console.error('Could not copy text: ', err);
+            });
+        });
+        document.querySelector('#copyButtonContainer').style.display = 'block';
+      }
+    </script>
+  </div>
+</body>
+</html>
