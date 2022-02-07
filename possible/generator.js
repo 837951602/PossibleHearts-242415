@@ -23,8 +23,8 @@ for(i=1; i<17; ++i) {
   A[i] = b;
   B[i] = c;
   console.log(i,b.size,c.size);
-  fs.writeFile(`Playing${i}.txt`,[...b].map(unpack).join``,{encoding:'latin1'},(i=>_=>console.log(`Playing${i}.txt`))(i));
-  fs.writeFile(`Ended${i}.txt`,[...c].map(unpack).join``,{encoding:'latin1'},(i=>_=>console.log(`Ended${i}.txt`))(i));
+  fs.writeFile(`Playing${i}.bin`,[...b].map(unpack).join``,{encoding:'latin1'},(i=>_=>console.log(`Playing${i}.bin`))(i));
+  fs.writeFile(`Ended${i}.bin`,[...c].map(unpack).join``,{encoding:'latin1'},(i=>_=>console.log(`Ended${i}.bin`))(i));
   delete A[i-1];
   delete B[i-1];
 }
