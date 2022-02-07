@@ -1,3 +1,4 @@
+fs=require('fs');
 base = 28*0x01010101; // Everyone start at 28 and 128 trigger the end, making it easier checked
 function unpack(x) {
   x-=base;
